@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { GameService } from 'src/app/services/game.service';
+import { Card } from 'src/app/interfaces/card';
 
 @Component({
   selector: 'app-image',
@@ -6,12 +8,29 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./image.component.css']
 })
 export class ImageComponent implements OnInit {
+  
+  @Input() card: Card = {
+    name: '',
+    imageURL: ''
+  }
+  
+  imageFrontURL = '';
 
-  imageURL = 'https://m.media-amazon.com/images/I/71EiS8De01L._AC_SL1500_.jpg';
+  constructor(
+    private gameService: GameService
+  ) {  }
 
-  constructor() { }
+  imageBackURL = this.gameService.getBackCard();
+  imageURL = this.imageBackURL;
 
   ngOnInit(): void {
+    //Load the new URL for the front card
+    this.imageFrontURL = this.card.imageURL;
+  }
+
+  //Function to rotate the card
+  rotate() {
+    this.imageURL = this.imageFrontURL;
   }
 
 }
