@@ -1,0 +1,9 @@
+h2 {
+    color: white;
+    text-align: center;
+}
+
+.timer-container {
+    display: flex;
+    justify-content: end;
+}

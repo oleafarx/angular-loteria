@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TimerComponent implements OnInit {
 
+  timer: any = setInterval(() => {return this.timer++}, 1000);
+  svgTime = "../../../assets/svg/time-svgrepo-com.svg";
+
   constructor() { }
 
   ngOnInit(): void {

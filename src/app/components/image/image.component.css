@@ -1,3 +1,10 @@
 img {
-    width: 200px;
+    width: 15vw;
+    border: 0.2vw solid white;
+}
+
+@media screen and (max-width: 767px) {
+    img {
+        width: 40vw;
+    }
 }

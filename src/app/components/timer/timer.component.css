@@ -1,0 +1,9 @@
+.conatiner-timer--component {
+    display: flex;
+    flex-direction: row;
+}
+
+p {
+    color: white;
+    margin-left: 1em;
+}

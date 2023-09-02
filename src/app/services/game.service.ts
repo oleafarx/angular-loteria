@@ -25,6 +25,38 @@ export class GameService {
     {
       name: 'Typescript',
       imageURL: this.routeImages + 'typescript.png'
+    },
+    {
+      name: 'Angular',
+      imageURL: this.routeImages + 'angular.png'
+    },
+    {
+      name: 'Typescript',
+      imageURL: this.routeImages + 'typescript.png'
+    },
+    {
+      name: 'Angular',
+      imageURL: this.routeImages + 'angular.png'
+    },
+    {
+      name: 'Typescript',
+      imageURL: this.routeImages + 'typescript.png'
+    },
+    {
+      name: 'Angular',
+      imageURL: this.routeImages + 'angular.png'
+    },
+    {
+      name: 'Typescript',
+      imageURL: this.routeImages + 'typescript.png'
+    },
+    {
+      name: 'Angular',
+      imageURL: this.routeImages + 'angular.png'
+    },
+    {
+      name: 'Typescript',
+      imageURL: this.routeImages + 'typescript.png'
     }
   ];
 
